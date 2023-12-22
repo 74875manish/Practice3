@@ -1,0 +1,67 @@
+package com.test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LaunchBrowser {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver " ,"C:\\Users\\gashi\\OneDrive\\Desktop\\Automation Testing\\Chromedriver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com/");
+		driver.findElement(By.id("APjFqb")).sendKeys("Facebook");
+		Thread.sleep(1000);
+		driver.findElement(By.className("gNO89b")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//h3[normalize-space()='Facebook - log in or sign up']")).click();
+		
+		driver.findElement(By.id("email")).sendKeys("mg52499@gmail.com");
+		driver.findElement(By.id("pass")).sendKeys("9167053980");
+		//Thread.sleep(1000);
+		driver.findElement(By.name("login")).click();
+	//	driver.findElement(By.className("x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft")).click();
+		
+		//driver.findElement(By.cssSelector(".x6s0dn4.x78zum5.xl56j7k.x1e0frkt.x3fpzix.xxdpisx")).click();
+		driver.findElement(By.cssSelector("input[placeholder='Search Facebook']")).sendKeys("Palash Bhoge");
+	driver.findElement(By.cssSelector("div[class='x9f619 x1n2onr6 x1ja2u2z x78zum5 xdt5ytf x1iyjqo2 x2lwn1j'] div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(2) div:nth-child(2) div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(1) span:nth-child(1) span:nth-child(1)")).click();
+		
+		
+			}
+
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+package test;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LaunchBrowser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		//System.setProperty("webDriver.chrome.driver","C:\Users\gashi\OneDrive\Desktop\Automation Testing\Chromedriver.chromedriver.exe");
+		System.setProperty("driver", "C:\\Users\\gashi\\OneDrive\\Desktop\\Automation Testing\\Chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com/");
+		driver.findElement(By.cssSelector("#APjFqb")).sendKeys("Amazon");
+		//driver.findElement(By.cssSelector("div[id='jZ2SBf'] div:nth-child(1) span:nth-child(1)")).click();
+		driver.findElement(By.id("jZ2SBf")).click();
+		
+	}
+
+}
+
+
+
